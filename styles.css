@@ -8,11 +8,11 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: #2e150e;
+    background-color: #000000;
 }
 .header {
     display: flex;
-    background-color: rgb(49 22 1);
+    background-color: rgb(77 41 0);
     height: 50px;
 }
 .menu__burger {
@@ -57,24 +57,7 @@ html, body {
     height: 50%;
     background-size: cover;
 }
-@media (min-width: 768px) {
-    .menu {
-        display: flex;
-    }
-    .menu__burger {
-        display: none;
-    }
-    .promo {
-        height: 600px;
-    }
-    .promo__logo {
-        margin-top: 176px;
-        top: 0;
-        width: 570px;
-        height: 278px;
-    }
 
-}
 .info {
     margin: 20px;
     text-align: center;
@@ -95,8 +78,37 @@ html, body {
 .group__card {
     margin: 20px;
     background-size: cover;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    /* border-bottom: 1px solid rgb(255, 255, 255); */
 }
 .card__photo {
     width: 100%;
+}
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+    }
+    .menu__burger {
+        display: none;
+    }
+    .promo {
+        height: 600px;
+    }
+    .promo__logo {
+        margin-top: 176px;
+        top: 0;
+        width: 570px;
+        height: 278px;
+    }
+    .composition {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .group__card {
+        width: 30%;
+    }
+    .card__photo {
+        height: 400px;
+    }
 }
